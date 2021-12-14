@@ -703,7 +703,7 @@ p {
 h2 {
     font-size: 21px !important;
     line-height: 1.4em;
-    color: white !important;
+    color: black !important;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -712,7 +712,7 @@ h3 {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
-    color: black;!important;
+    color: black!important;
 }
 
 .med-width-whitespace {
@@ -722,7 +722,7 @@ h3 {
 }
 
 h1 {
-    color: white !important;
+    color: black; !important;
 }
 
 h4 {
@@ -748,7 +748,7 @@ h4 {
 }
 
 .white-background {
-    background-color: rgb(0, 0, 0, 0.8);
+    background-color: rgb(255, 255, 255, 0.8);
     padding: 40px 40px 40px 40px;
     border-radius: 2em;
 }
