@@ -3,16 +3,17 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
+    width: 100vh;
 }
 
 a,
 button {
     transition: all .3s ease-in-out;
     outline: none!important;
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
     cursor: pointer;
 }
 
@@ -38,6 +39,10 @@ a:hover {
     padding-right: 0;
     display: flex;
     flex-direction: column;
+}
+
+.col-md-offset-2 {
+    margin-left: 0;
 }
 
 .bloc-lg {
@@ -208,6 +213,12 @@ a:hover {
     border-color: rgba(0, 0, 0, .1);
 }
 
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .d-bloc .panel .a-btn,
 .l-bloc .a-btn,
 .l-bloc .navbar a,
@@ -279,6 +290,7 @@ a:hover {
     margin-bottom: 0;
     z-index: 1;
     padding: 0 1em;
+    justify-content: space-around;
 }
 
 .navbar-brand {
@@ -313,7 +325,7 @@ a:hover {
 
 .nav > li {
     float: left;
-    margin-top: 4px;
+    margin: 0 1em;
     font-size: 16px;
 }
 
@@ -354,7 +366,6 @@ a:hover {
 
 @media (min-width: 768px) {
     .site-navigation {
-        position: absolute;
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
@@ -453,6 +464,10 @@ button {
     outline: none!important;
 }
 
+#nav-toggle{
+    display: none;
+}
+
 .btn-rd {
     border-radius: 40px;
 }
@@ -498,6 +513,13 @@ button {
     border: 1px rgba(0, 0, 0, .1) solid;
     border-radius: 0.3em;
     width: 30em;
+    padding: 0.5em;
+    margin-bottom: 0.8em;
+    font-family: HelveticaNeue-Light;
+}
+
+label{
+    color: black;
 }
 
 .scrollToTop {
@@ -649,7 +671,7 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 100%;
 }
 
 .hero-bloc-text {
@@ -759,6 +781,8 @@ h4 {
     background-color: rgb(255, 255, 255, 0.8);
     padding: 40px 40px 40px 40px;
     border-radius: 2em;
+        display: flex;
+    flex-direction: column;
 }
 
 .bold-link {
@@ -1097,7 +1121,10 @@ h4 {
         height: 320px;
     }
 
-
+    .voffset-lg {
+        display: flex;
+        flex-direction: column;
+    }
 
     .portfolio-row {
         margin-bottom: 44px;
@@ -1171,7 +1198,8 @@ h4 {
     }
 
     .voffset-lg {
-        width: 22em;
+        display: flex;
+        flex-direction: column;
     }
 
     .name{
