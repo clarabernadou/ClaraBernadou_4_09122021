@@ -36,6 +36,8 @@ a:hover {
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .bloc-lg {
@@ -74,7 +76,6 @@ a:hover {
 .bloc-bg-texture::before {
     content: "";
     background-size: 2px 2px;
-    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -274,13 +275,10 @@ a:hover {
     padding-left: 3em;
 }
 
-#bloc-1-hero h1 {
-    font-size: 32px;
-}
-
 .navbar {
     margin-bottom: 0;
     z-index: 1;
+    padding: 0 1em;
 }
 
 .navbar-brand {
@@ -672,9 +670,15 @@ a {
     margin: auto auto auto auto;
 }
 
+
+element.style {
+}
+.text-center {
+    text-align: center;
+}
 p {
     color: #1A1A1A !important;
-    font-size: 11px;
+    font-size: 19px;
 }
 
 .tight-width-whitespace {
@@ -701,7 +705,7 @@ p {
 }
 
 h2 {
-    font-size: 21px !important;
+    font-size: 21px;
     line-height: 1.4em;
     color: black !important;
     text-transform: uppercase;
@@ -709,7 +713,7 @@ h2 {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 21px;
     text-transform: uppercase;
     font-weight: 700;
     color: black!important;
@@ -727,6 +731,10 @@ h1 {
 
 h4 {
     color: #B85E00 !important;
+}
+
+.name{
+    font-size: 17px;
 }
 
 .icons {
@@ -842,6 +850,23 @@ h4 {
     .bloc .container {
         padding-left: 3em;
         padding-right: 3em;
+        flex-direction: column;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .name{
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .bloc-lg {
+        padding: 50px 50px;
     }
 
 }
@@ -849,6 +874,26 @@ h4 {
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
+    }
+
+    .bloc .container{
+        flex-direction: column;
+    }
+
+    P{
+        font-size: 19px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .name{
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 23px;
     }
 }
 
@@ -903,6 +948,36 @@ h4 {
         padding-left: 10px!important;
         padding-right: 10px!important;
     }
+
+    .bloc .container{
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .name{
+        font-size: 14px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+    h2{
+        font-size: 19px;
+    }
+
+    .tight-width-whitespace{
+        flex-direction: column;
+    }
+
+    #bloc-1-hero h1 {
+        font-size: 27px;
+    }
+
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-2, .col-sm-3, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+        padding: 25px 15px;
+    }
+
     .b-parallax {
         background-attachment: scroll;
     }
@@ -1045,6 +1120,72 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .white-background{
+        width: 20em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .bloc .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+
+    p{
+        font-size: 17px;
+    }
+
+    .font-1 p{
+        font-size: 16px;
+    }
+
+    .titleone{
+        width: 18em;
+    }
+
+    .cta-hero{
+        font-size: 12px;
+    }
+
+    .social {
+        max-width: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    .row.row-no-gutters > [class^="col-"], .row.row-no-gutters > [class*=" col-"] {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+
+    .bloc-lg {
+        padding: 50px 50px;
+    }
+
+    .voffset-lg {
+        width: 22em;
+    }
+
+    .name{
+        font-size: 12px;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+
+    #bloc-1-hero h1 {
+        font-size: 21px;
+    }
+
 }
 
 @media (max-width: 767px) {
