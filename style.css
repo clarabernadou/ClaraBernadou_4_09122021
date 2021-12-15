@@ -441,7 +441,6 @@ nav .caret {
 
 .mg-md {
     margin-top: 10px;
-    margin-bottom: 20px;
 }
 
 .mg-lg {
@@ -721,7 +720,6 @@ p {
 }
 
 .cta-hero {
-    margin-top: 22px;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -754,7 +752,7 @@ h3 {
 }
 
 h1 {
-    color: black; !important;
+    color: black;
 }
 
 h4 {
@@ -856,10 +854,6 @@ h4 {
 }
 
 @media (max-width: 1024px) {
-    .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
     .bloc-tile-3.full-width-bloc .container,
@@ -1103,15 +1097,19 @@ h4 {
     .btn-dwn {
         display: none;
     }
-    .voffset {
-        margin-top: 5px;
-    }
+
     .voffset-md {
-        margin-top: 20px;
+        margin-top: 0;
     }
+   
+   .voffset {
+        margin-top: 0;
+    }
+
     .voffset-lg {
-        margin-top: 30px;
+        margin-top: 0;
     }
+
     form {
         padding: 5px;
     }
@@ -1179,7 +1177,7 @@ h4 {
     }
 
     p{
-        font-size: 17px;
+        font-size: 16px;
     }
 
     h3 {
@@ -1216,6 +1214,15 @@ h4 {
     .voffset-lg {
         display: flex;
         flex-direction: column;
+        margin-top: 0;
+    }
+
+    .voffset-md {
+        margin-top: 0;
+    }
+   
+   .voffset {
+        margin-top: 0;
     }
 
     .name{
@@ -1255,3 +1262,5 @@ h4 {
     .tight-width-whitespace {
         margin: 0;
     }
+
+}
