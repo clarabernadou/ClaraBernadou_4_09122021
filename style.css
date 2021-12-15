@@ -3,7 +3,7 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
-    width: 100vh;
+    width: 100%;
 }
 
 a,
@@ -217,6 +217,11 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    grid-gap: 3em;
+}
+
+.text-card{
+    font-size: 22px !important;
 }
 
 .d-bloc .panel .a-btn,
@@ -368,7 +373,6 @@ a:hover {
     .site-navigation {
         top: 50%;
         right: 20px;
-        transform: translate(0, -50%);
     }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
@@ -542,6 +546,10 @@ label{
     opacity: 1;
 }
 
+.contact-text{
+    text-align: center;
+}
+
 a[data-lightbox] {
     position: relative;
     display: block;
@@ -700,11 +708,10 @@ element.style {
 }
 p {
     color: #1A1A1A !important;
-    font-size: 19px;
+    font-size: 22px;
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
     margin: auto auto auto auto;
 }
 
@@ -735,14 +742,13 @@ h2 {
 }
 
 h3 {
-    font-size: 21px;
+    font-size: 25px;
     text-transform: uppercase;
     font-weight: 700;
     color: black!important;
 }
 
 .med-width-whitespace {
-    max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
@@ -769,8 +775,8 @@ h4 {
 }
 
 .portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
+    margin-bottom: 0;
+    margin-top: 20px;
 }
 
 .avatar {
@@ -864,16 +870,13 @@ h4 {
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
-    .navbar .nav {
-        max-width: 80%
-    }
     .nav-center.navbar .nav {
         max-width: 100%
     }
 
     .bloc .container {
-        padding-left: 3em;
-        padding-right: 3em;
+        padding-left: 0em;
+        padding-right: 0em;
         flex-direction: column;
     }
 
@@ -905,7 +908,7 @@ h4 {
     }
 
     P{
-        font-size: 19px;
+        font-size: 16px;
     }
 
     h3 {
@@ -919,6 +922,11 @@ h4 {
     h2 {
         font-size: 23px;
     }
+
+    .col-sm-4{
+        width: 16em;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {
@@ -929,7 +937,7 @@ h4 {
 
 @media (max-width: 991px) {
     .container {
-        width: 100%;
+        width: 85%;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -940,7 +948,7 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: 0;
+        padding-left: 4em;
         padding-right: 0;
     }
     .bloc-group,
@@ -1148,6 +1156,10 @@ h4 {
         padding-right: 0;
     }
 
+    .portfolio-thumb {
+        width: 100%;
+    }
+
     .white-background{
         width: 20em;
         display: flex;
@@ -1170,8 +1182,12 @@ h4 {
         font-size: 17px;
     }
 
-    .font-1 p{
-        font-size: 16px;
+    h3 {
+        font-size: 19px;
+    }
+
+    .text-card {
+        font-size: 13px !important;
     }
 
     .titleone{
@@ -1214,10 +1230,28 @@ h4 {
         font-size: 21px;
     }
 
+    .portfolio-row{
+        grid-gap: 1em;
+    }
+
 }
 
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
     }
-}
+
+    .portfolio-row {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 1em;
+    }
+
+    .portfolio-row {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    
+    .tight-width-whitespace {
+        margin: 0;
+    }
