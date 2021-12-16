@@ -1239,6 +1239,10 @@ p {
     .icon-md {
         font-size: 30px!important;
     }
+        .column-form{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1358,11 +1362,6 @@ p {
 
     .text-card {
         font-size: 18px !important;
-    }
-
-    .column-form{
-        display: flex;
-        flex-direction: column;
     }
 
 }
